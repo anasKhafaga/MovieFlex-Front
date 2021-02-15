@@ -1,0 +1,33 @@
+.pagBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Goldman;
+  letter-spacing: 0.2em;
+}
+
+.pagBar p {
+  margin: 0;
+}
+
+.pagItem {
+  text-decoration: none;
+  color: white;
+  width: 2.5em;
+  text-align: center;
+  border-radius: 80%;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+
+.pageItemA {
+  font-size: 1.2em;
+  color: #f0ba18;
+}
+
+.pagMove {
+  color: #f0ba18;
+  font-size: 1.8em;
+  padding: 0.1em;
+  text-align: center;
+}

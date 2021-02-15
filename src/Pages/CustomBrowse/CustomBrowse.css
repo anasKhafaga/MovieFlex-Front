@@ -1,0 +1,90 @@
+.cbPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.globeIteration {
+  display: block;
+}
+
+.cbContent {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+
+.spMC {
+  width: 80vw;
+}
+
+.cbFt {
+  position: relative;
+  height: 2.5em;
+}
+
+.cbFtWl {
+  display: none;
+}
+
+.cbLoader {
+  margin: 5em 0 4em;
+}
+
+
+.exMain h2 {
+  margin-top: 0;
+  letter-spacing: 0.2em;
+  font-family: 'Goldman';
+}
+
+@media only screen and (min-width: 750px) {
+  .cbContent {
+    display: grid;
+    width: 98%;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 2%;
+    row-gap: 2em;
+    margin-bottom: 0;
+    font-size: 0.8em;
+  }
+
+  .exMain {
+    margin-bottom: 2em;
+    width: 100%;
+    height: 100%;
+  }
+
+  .spMC {
+    width: 100%;
+  }
+
+
+  .cbLoader {
+    height: 40vh;
+    margin-left: 92%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (min-height: 551px) {
+
+
+  .cbContent {
+    display: grid;
+    width: 98%;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 2%;
+    row-gap: 2em;
+    margin-bottom: 0;
+    font-size: 0.8em;
+  }
+
+  .cbLoader {
+    margin-left: 150%;
+  }
+}

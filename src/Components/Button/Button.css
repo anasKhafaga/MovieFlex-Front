@@ -1,0 +1,27 @@
+.btn {
+  border: .05em solid #f0ba18;
+  border-radius: 0.4em;
+  color: #f0ba18;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1em 2em 1em;
+  height: 3em;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: width 0.1s;
+  width: 100%;
+  font-family: Righteous;
+}
+
+
+
+.btnClicked:hover {
+  border: .05em solid #ffe699 !important;
+  color: #ffe699 !important;
+  border-radius: 0.4em;
+}
+
+.btnLink {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,329 @@
+.suContent {
+  height: 100%;
+  width: 100%;
+  font-family: Righteous;
+}
+
+.suContForm {
+  position: absolute;
+  z-index: 1;
+}
+
+
+.suBack {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.suBack img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.suBackColor {
+  float: left;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(90deg, #f3c63f, #282c34);
+  opacity: 30%;
+}
+
+.suImgPc {
+  display: none;
+}
+
+.suBackShadow {
+  float: left;
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.suContForm {
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.suContForm h2 {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 0;
+}
+
+.signupForm {
+  width: 80%;
+  font-size: 0.7em;
+}
+
+.formComp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+.formComp button {
+  margin-top: 2em;
+  background-color: rgba(40, 44, 52, 0.3)
+}
+
+.signupForm label {
+  text-align: left;
+}
+
+.signupForm input {
+  outline: none;
+  border: none;
+  padding: 0.5em 0em;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  width: 100%;
+}
+
+.formComp div {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.formComp input {
+  border-bottom: 0.1em solid slategray;
+  padding-left: 1.6em;
+}
+
+.formComp p {
+  text-align: left;
+  color: #D8000C;
+  margin: 0
+}
+
+.formComp input:focus~i {
+  color: #f3c63f;
+}
+
+.formComp input:focus {
+  border-bottom: 0.1em solid #f3c63f;
+}
+
+.signupForm i {
+  color: slategray;
+  width: 1.6em;
+  text-align: left;
+  position: absolute;
+  left: 10%;
+}
+
+.wrongInput {
+  border-bottom: 0.1em solid #D8000C !important;
+}
+
+.wrongInput~i {
+  color: #D8000C !important;
+}
+
+.correctInput {
+  border-bottom: 0.1em solid #f3c63f !important;
+}
+
+.correctInput~i {
+  color: #f3c63f !important;
+}
+
+.suWlLoading {
+  margin: 2em auto 0;
+  height: 4em !important;
+  width: 4em !important;
+}
+
+.errorBoxSu {
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.errorBoxSu div {
+  padding: 0.5em 5%;
+  position: static;
+  width: 90%;
+}
+
+.errorBoxSu p {
+  margin: 0 1em;
+  font-size: 0.8em;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.errorBoxSu img {
+  width: 1em;
+  height: 1em;
+}
+
+.haveAcc {
+  font-size: 0.7em;
+  letter-spacing: 0.03em;
+}
+
+.haveAcc a {
+  text-decoration: none;
+  color: #f3c63f;
+}
+
+.suPopMn {
+  height: auto !important;
+}
+
+.suPopMn img {
+  width: 7em;
+}
+
+.suPopMn p {
+  text-align: center;
+}
+
+.suBackPc {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .suBackShadow {
+    display: none;
+  }
+
+  .suBackImg {
+    display: none;
+  }
+
+  .suBackColor {
+    display: none;
+  }
+
+  .suBackPc {
+    display: block;
+    object-fit: cover;
+    filter: blur(0.2em);
+  }
+
+  .formBody {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.4);
+    border-radius: 0.2em;
+  }
+
+  .suContForm {
+    position: static;
+    height: auto;
+    width: 50%;
+    color: #282c34;
+    font-size: 0.7em;
+    justify-content: space-evenly;
+    padding: 0.5em 0;
+    box-sizing: border-box;
+    padding-right: 5em;
+  }
+
+  .suContForm h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .suImgPc {
+    display: flex;
+    height: 115%;
+    position: relative;
+    width: 55%;
+    box-shadow: 1em 0 1.3em rgba(0, 0, 0, 0.4);
+    border-radius: 0.3em 0em 0em 0.3em;
+  }
+  
+  .suImgPc div {
+    background-image: linear-gradient(90deg, #f3c63f, #282c34);
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    opacity: 40%;
+    z-index: 5;
+    border-radius: 0.3em 0em 0em 0.3em;
+  }
+  
+  .suImgPc img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: relative;
+    top: 0;
+    border-radius: 0.3em 0em 0em 0.3em;
+  }
+  
+  label {
+    display: none;
+  }
+
+  .signupForm {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
+  }
+
+  .suContForm h2 {
+    font-family: "Goldman";
+    margin-top: 1em;
+    height: 0.8em;
+  }
+
+  .signupForm input {
+    color: inherit;
+    font-family: inherit;
+  }
+
+  .formComp {
+    height: 5em;
+  }
+
+  .formComp button {
+    background-color: white
+  }
+
+  .formComp button:hover {
+    border: .05em solid hsl(45, 100%, 55%) !important;
+    color: hsl(45, 100%, 55%) !important;
+    border-radius: 0.4em;
+  }
+
+  .signupForm i {
+    text-align: left;
+    position: relative;
+    left: 1.5em;
+  }
+
+  .signupForm p {
+    padding-left: 1.5em;
+  }
+
+  .lgContForm {
+    height: 60%;
+    box-shadow: none;
+  }
+}

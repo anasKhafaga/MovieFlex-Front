@@ -1,0 +1,58 @@
+.input {
+  display: none;
+}
+
+.input input {
+  position: relative;
+  border-radius: 0.5em;
+  padding: 1% 1%;
+  font-size: 0.8em;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border: 0.1em solid white;
+}
+
+.input input:focus {
+  border: 0.1em solid #f0ba18;
+}
+
+/* .input input:focus+div::after {
+  width: 103%;
+  height: 140%;
+  padding: 1% 1%;
+  font-size: 0.8em;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 0.6em;
+  top: -15%;
+  left: -1%;
+  background-color: hsla(45, 88%, 52%, 0.5);
+} */
+
+/* .input:focus {
+  border: 0.15em solid #f0ba18;
+  box-shadow: 0.2em 0.2em 0 #f0ba1944, -0.2em -0.2em 0 #f0ba1944;
+} */
+
+@media only screen and (min-width: 1025px) and (min-height: 551px) {
+  .input {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .input input {
+    position: static;
+    border-radius: 1em;
+    padding: 1% 1%;
+    font-size: 0.7em;
+    outline: none;
+    padding: 0.1em 0.5em;
+    width: 90%;
+    border: none;
+    font-family: Righteous;
+    border: 0.1em solid white;
+  }
+}

@@ -1,0 +1,15 @@
+action Col: #f0ba18
+action col bight: #f3c63f
+action col hover :  #ffe699
+back color: #282c34
+error color : #D8000C
+border-radius: 0.4em
+
+Righteous
+Goldman
+
+
+homePage >
+interface0000
+popular section
+highly rated

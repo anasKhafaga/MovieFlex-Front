@@ -1,0 +1,151 @@
+.mainHeader {
+  position: fixed;
+  z-index: 205;
+  height: 2em;
+  width: 100%;
+  background-color: hsl(220, 13%, 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainNav {
+  display: none;
+
+}
+
+.mhContent {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+}
+
+.mhContent a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.headerDiv {
+  width: 60%;
+  text-align: center;
+}
+
+.mnDiv,
+.seDiv {
+  width: 20%;
+}
+
+.mnDiv {
+  text-align: left;
+  line-height: 0.5;
+}
+
+.seDiv {
+  text-align: right;
+  line-height: 0.5;
+}
+
+.mhSearchBox {
+  display: block;
+  height: 2em;
+  position: absolute;
+  left: 3%;
+  top: 3em;
+  width: 90%;
+  animation: sbslidein 0.3s;
+}
+
+@keyframes sbslidein {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 3em;
+  }
+}
+
+
+.mainHeader h1 {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: 'Goldman';
+}
+
+.mainHeader img {
+  width: 1.3em;
+}
+
+.mhMenu,
+.mhSearch {
+  transition: width height 0.5s;
+}
+
+.mhMenu:hover,
+.mhSearch:hover {
+  cursor: pointer;
+}
+
+.mhMenu:active,
+.mhSearch:active {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+
+@media only screen and (min-height: 551px) and (min-width: 1025px) {
+
+  .mnDiv {
+    display: none;
+  }
+
+  .mainHeader h1 {
+    text-align: left;
+  }
+
+  .headerDiv {
+    width: 20%;
+    text-align: center;
+  }
+
+  .mainNav {
+    display: flex;
+    list-style: none;
+    font-size: 0.5em;
+    width: 60%;
+    justify-content: space-evenly;
+    background-color: rgba(177, 177, 177, 0.2);
+    padding: 0.5em 0;
+    border-radius: 1em;
+    color: white;
+    font-family: 'Goldman';
+  }
+
+  .mainNav li {
+    color: #f0ba18;
+  }
+
+  .mainNav a:hover {
+    color: #ffe699;
+  }
+
+  .mhSearch {
+    display: none;
+  }
+
+  .seDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .mhClose {
+    display: flex;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+  }
+}

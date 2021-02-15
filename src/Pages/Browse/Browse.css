@@ -1,0 +1,82 @@
+.explorePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.exMain {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exploreContent {
+  margin-bottom: 3em;
+  display: grid;
+  grid-template-columns: repeat(2, 9em);
+  grid-auto-rows: 12em;
+  justify-content: center;
+  column-gap: 1em;
+  row-gap: 1em;
+  width: 100%;
+  font-family: Righteous;
+}
+
+.customMCard {
+  width: 9em;
+  height: 12em;
+}
+
+.brFt {
+  position: relative;
+  z-index: 500;
+  bottom: 0;
+  height: 2.5em;
+}
+
+.brLoFt {
+  position: fixed;
+  bottom: 0;
+  z-index: 500;
+  height: 2.5em;
+}
+
+.brFtEr {
+  margin-top: 80vh;
+}
+
+.movieWait {
+  height: 50vh;
+}
+
+.movieWait {
+  margin-top: 40vh;
+}
+
+.paginationBar {
+  width: 80%;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 750px) {
+  .exploreContent {
+    display: grid;
+    grid-template-columns: repeat(3, 9em);
+    column-gap: 7.5%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .exploreContent {
+    display: grid;
+    grid-template-columns: repeat(4, 9em);
+    column-gap: 5%;
+
+  }
+
+  .paginationBar {
+    width: 50%;
+  }
+}

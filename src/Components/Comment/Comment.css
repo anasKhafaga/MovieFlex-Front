@@ -1,0 +1,97 @@
+.comment {}
+
+.comBlock {
+  display: flex;
+  text-align: left;
+  padding-bottom: 0.4em;
+  border-bottom: 0.02em solid slategrey;
+  margin-bottom: 0.5em;
+}
+
+.comData {
+  width: 80%;
+}
+
+.comBlock img {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.comBlock h4 {
+  margin: 0;
+  font-weight: bold;
+
+}
+
+.comBlock p {
+  margin: 0;
+  font-size: 0.7em;
+}
+
+.leaveCom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.leaveCom textarea {
+  outline: none;
+  border: none;
+  background-color: rgba(177, 177, 177, 0.2);
+  border-radius: 0.4em;
+  width: 96%;
+  padding: 2%;
+  height: 4em;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.leaveCom button {
+  width: 2em;
+  border-radius: 50%;
+  height: 2em;
+  font-size: 0.7em;
+  padding: 0;
+}
+
+.leaveCom textarea:active {
+  outline: none;
+}
+
+
+.comMeta {
+  color: slategrey
+}
+
+.comLoading {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.comTools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #f0ba18;
+}
+
+.t {
+  color: #D8000C;
+}
+
+.c {
+  margin-right: 0.2em;
+}
+
+
+
+.comBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row-reverse;
+  align-items: center;
+}

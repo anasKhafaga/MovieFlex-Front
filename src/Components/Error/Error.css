@@ -1,0 +1,24 @@
+.errorBox {
+  width: 80%;
+  background-color: #FFBABA;
+  color: #D8000C;
+  position: absolute;
+  top: 15vh;
+  left: 5%;
+  text-align: center;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 0.5em;
+}
+.errorBox p {
+  margin: 0;
+  margin-left: 2em;
+}
+
+.errorBox img {
+  width: 10%;
+  height: 10%;
+}

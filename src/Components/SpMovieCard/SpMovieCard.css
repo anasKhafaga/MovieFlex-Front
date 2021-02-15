@@ -1,0 +1,141 @@
+.spMvCrd {
+  position: relative;
+  width: 100%;
+  height: 10em;
+  transition: visibility 0.2s, width 0.2s, height 0.2s;
+  font-family: Righteous;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+
+.spMvCrd a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.smcRemove {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  animation: smcRemove 0.2s;
+}
+
+@keyframes smcRemove {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.smcPoster {
+  width: 30%;
+  height: 80%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 2;
+  left: 10%;
+  bottom: 10%;
+  border-radius: 0.2em;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4);
+}
+
+.smcIcon {
+  position: absolute;
+  height: 1.5em;
+  top: 1em;
+  right: 0;
+}
+
+.globalIcon {
+  bottom: 90%;
+}
+
+.sMCContent {
+  background-color: #264073;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.4);
+  padding: 1% 5% 1% 45%;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.sMCContent h5 {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 0.3em;
+}
+
+.spMeta {
+  margin-top: 0.3em;
+  color: rgb(206, 206, 206);
+  width: 100%;
+}
+
+.spMeta p {
+  text-align: left;
+  margin: 0 0 0.3em;
+  font-size: 0.55em;
+
+}
+
+.spMCrating {
+  margin-top: 0;
+}
+
+
+.spMvDel:after {
+  width: 50%;
+  height: 50%;
+}
+
+.smcIcons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  position: absolute;
+  right: 0;
+  top: 1.25em
+}
+
+.smcIcons img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+
+@media only screen and (min-width: 1025px) and (min-height: 551px) {
+  .smcPoster {
+    left: 1.75em;
+    transition: opacity 0.2s;
+  }
+
+  .sMCContent {
+    padding-left: 47%;
+    transition: opacity 0.2s;
+  }
+
+  .sMCContent:hover {
+    opacity: 80%;
+  }
+
+  .wLIcon {
+    cursor: pointer !important;
+    transition: opacity 0.2s;
+  }
+
+  .wLIcon:hover {
+    opacity: 50%;
+  }
+}
